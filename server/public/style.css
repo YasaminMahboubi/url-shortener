@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Ysabeau Office', sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(17, 28, 58,.95);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+div:not(#noStyle){
+    width: 500px;
+    height: 200px;
+    border-radius: .5rem;
+    border: 1px solid #55D3D4;
+    background-color: #111C3A;
+    color: #fff;
+    padding: .5rem;
+}
+div:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    /* align-items: center; */
+}
+input{
+    border: none;
+    border-bottom: 1px solid #55D3D4;
+    outline: none;
+    background-color: transparent;
+    color: inherit;
+}
+#urlInp{
+    width: 90%;
+    padding: .2rem;
+    margin-bottom: 1rem;
+}
+#submit{
+    width: 20%;
+    height: 30px;
+}
+#shortDiv{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: center;
+}
+#resultUrl{
+    border-bottom: 1px solid #55D3D4;
+    padding: .5rem;
+    margin-bottom: .5rem;
+    color: #fff;
+    display: block;
+    width: 90%;
+    text-decoration: none;
+}
+#shortDiv > button{
+    width: 50px;
+    height: 50px;
+}
+button , input[type= "submit"]{
+    padding: .5rem;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #55D3D4;
+    border-radius: .2rem;
+}
+button:hover , input[type= "submit"]:hover{
+    background-color: #fff;
+    color: #000;
+}

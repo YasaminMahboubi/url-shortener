@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Ysabeau Office', sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #333 !important;
+    overflow-x: hidden;
+}
+#app{
+    width: 100vw;
+    height: 100vh;
+}
+#slogan{
+    padding-top: 10rem;
+    font-size: 3rem;
+    color: #fff;
+}
+#register {
+    gap: 1rem;
+    padding-top: 10rem;
+}
+#register > button{
+    width: 30%;
+    height: 50px;
+    color: #fff;
+    background-color: #03A9D2;
+    margin-right: 1rem;
+}
+#register > button:hover{
+    border: 1px solid #03A9D2;
+    background-color: transparent;
+}
+.redFont{
+    color: #E4414C;
+}
+#inpField , #showResult{
+    margin-bottom: 4rem;
+}
+#showResult{
+    display: none;
+    margin-top: 4rem;
+}
+#resultUrl{
+    width: 50%;
+    border-bottom: 2px solid #415E73;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+#resultUrl :hover  {
+        color: #E4414C;
+}
+#buttons{
+    width: 100%;
+}
+
+
+/* ----------------- general ------------------------------ */
+input , button {
+    outline: none;
+    border: none;
+    margin-bottom: .1rem !important;
+}
+button:not(.pagenumberButton) , #submit{
+    background-color: #415E73;
+    color: #fff;
+}
+button:hover{
+    background-color: #fff;
+    color: #000;
+}
+.displayFlex {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+section{
+    width: 50%;
+    height: 100%;
+}
+.inMiddle{
+    width: 80%;
+    height: 73%;
+    background-color: #fff;
+    border-radius: 1.5rem;
+    gap: 1rem;
+}
+a:hover{
+    color: rgb(77, 133, 77) !important;
+}
+label{
+    color: #000;
+    align-self: flex-start;
+}
+.submitForm{
+    border-radius: 2rem;
+    padding: .5rem;
+    width: 40%;
+    background-color: rgb(167, 57, 57);
+}
+.submitForm:hover{
+    background-color: #000;
+    color: #fff;
+}
+.classDisplayNone{
+    display: none !important;
+}
+.guest:hover{
+    color: #E4414C !important;
+}
+.hoverBackground{
+    background-color: transparent !important;
+}
+.errorClass{
+    border: 1px solid red !important;
+}
+.displayOn{
+    display: block !important;
+}
+form > div >  p {
+    opacity: 0;
+}
+form > div:not(#registerDiv) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 30%;
+}
+#header{
+    margin-bottom: 2rem;
+}
+.showErrorP{
+    opacity: 0;
+}
+.changeOPacity{
+    opacity: 1;
+}
+@media screen and (max-width: 500px) {
+    body{
+        padding-right: 1rem;
+    }
+}

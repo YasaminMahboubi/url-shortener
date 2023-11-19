@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL SHORTENER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Raleway:wght@100;300&family=Ysabeau+Office&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main id="main">
+        <div>
+            <h3>Paste the URL to be shortened</h3>
+           <form @submit.prevent="converting('generate')">
+                <input type="text" name="urlInp" id="urlInp" v-model="urlInp">
+                <input type="submit" value="submit" id="submit">
+           </form>
+        </div>
+        <div id="shortDiv">
+            <a v-bind:href="resultUrlLink" id="resultUrl">{{resultUrl}}</a>
+            <div id="noStyle">
+                <button id="copy" @click="copyText"><i class="fa-solid fa-copy"></i></button>
+                <button id="regenerate" @click="converting('regenerate')">regenerate</button>
+            </div>
+        </div>
+        <button id="restart" @click="restart()">restart</button>
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+<script src="main.js"></script>
+<script>
+</script>
+</html>

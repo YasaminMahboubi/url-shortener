@@ -1,0 +1,9 @@
+{
+    "id": 2,
+    "users": [{
+        "id": 1,
+        "username": "mrPingupan",
+        "email": "mrpngupan@couchpeople.com",
+        "password": "$2b$10$nlh46xmX5co5yRBB.yHetuPT9AGFis8rrNg/HJqeqnQCjud1yLrrm"
+    }]
+}
